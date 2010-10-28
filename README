@@ -1,0 +1,25 @@
+sumchecker.bash
+v 1.0
+Esther Nam
+@estherbester on Twitter
+
+
+This bash script will calculate MD5 checksums of all the files in a given folder. 
+
+
+REQUIREMENTS
+- openssl
+- The script will create a text file in the folder being scanned, so that folder needs to be writeable. 
+
+TO USE
+Open a terminal window and navigate to the directory containing the script. 
+
+Run:
+"$ ./sumchecker myfolder" where "myfolder" is the path to the folder whose files you want checksums for.  
+
+You can modify the script directly to scan files in subfolders, but the default is to check only the files in top level. Just change the "maxdepth" argument in line 16 to do that.
+
+KNOWN ISSUES
+The md5sums_whatever.txt file will also include an md5 sum of itself. I don't see much harm in this so I haven't bothered to figure out how to get rid of it. If you have any ideas, knock yourself out!
+
+
